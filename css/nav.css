@@ -1,0 +1,83 @@
+/*Navbar  */
+.sidenav {
+    position: fixed;
+    /* width: 80vw; */
+    max-width: 300px;
+    height: 100vh;
+    padding-top: 40px;
+    color: white;
+    background-color: #4d4d4d;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.sidenav.open {
+    transform: translateX(0);
+}
+
+.sidenav a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidenav li {
+    padding: 20px;
+    margin-bottom: 1px;
+    list-style: none;
+}
+
+.sidenav li:hover {
+    background-color: #393839;
+}
+
+.sidenav li.active {
+    background-color: #222;
+}
+
+.sidenav .hamburger, .sidenav .hamburger:after, .sidenav .hamburger:before {
+    content: "";
+    height: 4px;
+    width: 25px;
+    background-color: #4d4d4d;
+    display: block;
+    clear: both;
+    position: absolute;
+    border-radius: 3px;
+    top: 9px;
+    right: -35px;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.sidenav .hamburger:before {
+    position: relative;
+    top: 14px;
+    right: 0;
+}
+
+.sidenav .hamburger:after {
+    position: relative;
+    top: 3px;
+    right: 0;
+}
+
+.sidenav.open .hamburger, .sidenav.open .hamburger:after, .sidenav.open .hamburger:before {
+    background-color: white;
+    right: 10px;
+}
+
+.sidenav.open .hamburger {
+    transform: translateY(6px) rotate(-45deg);
+    width: 20px;
+}
+
+.sidenav.open .hamburger:before {
+    right: 0;
+    width: 20px;
+    transform: translateY(-14px) rotate(90deg);
+}
+
+.sidenav.open .hamburger:after {
+    right: 0;
+    width: 20px;
+    transform: translateY(-7px) rotate(45deg) scale(0) ;
+}

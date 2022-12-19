@@ -1,0 +1,8 @@
+
+RewriteEngine on
+#RewriteRule ([a-zA-Z0-9\-]+)_([0-9]+)\.php index.php?uc=$1&artID=$2 [N]#
+RewriteRule ^connection$ index.php?uc=connection [L]
+RewriteRule ^create$ index.php?uc=create [L]
+RewriteRule ^home$ index.php?uc=admin&action=home [L]
+RewriteRule ^control$ index.php?uc=admin&action=control [L]
+RewriteRule ^created$ index.php?uc=admin&action=createAdmin [L]
