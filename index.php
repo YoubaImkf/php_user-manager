@@ -16,11 +16,11 @@ $pdo =  PdoUser::getPdoUser();
 switch ($uc)   					
 {
     case 'connection': // le case cest la valeur attribuer a uc=..
-        include("view/connection.php");
+        include("views/connection.php");
     break;
     
     case 'create':
-        include("view/createAccount.php");
+        include("views/createAccount.php");
     break;
     
     case 'admin':

@@ -7,7 +7,7 @@ switch ($action)
     case 'home':
         if(isset($_SESSION['admin'])){
             $users = $pdo->getUsers();
-            include("view/home.php");
+            include("views/home.php");
         }else{
             header("Location: connection");
         }
@@ -25,7 +25,7 @@ switch ($action)
             // printf("User found!!!");
             
             $users = $pdo->getUsers();
-            include("view/home.php");
+            include("views/home.php");
         }
     break;
 
