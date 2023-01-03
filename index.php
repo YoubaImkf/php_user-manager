@@ -15,7 +15,7 @@ $pdo =  PdoUser::getPdoUser();
 
 switch ($uc)   					
 {
-    case 'connection': // le case cest la valeur attribuer a Action=..
+    case 'connection': // le case cest la valeur attribuer a uc=..
         include("view/connection.php");
     break;
     
@@ -31,7 +31,6 @@ switch ($uc)
         session_destroy();
         header("Location: connection");
     break;
-    
 
     default:
         include("view/connection.php");
