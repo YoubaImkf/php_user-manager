@@ -3,14 +3,13 @@
  * Classe d'accès aux données. 
  
  * Utilise les services de la classe PDO
- * pour l'application assochoisy (adaptation du cas lafleur)
  * Les attributs sont tous statiques,
  * les 4 premiers pour la connexion
  * $monPdo de articles PDO 
  * $monPdoGsb qui contiendra l'unique instance de la classe
  *
  * @package default
- * @author User Imakhalf
+ * @author User Imakhlaf
  * @version    1.0
  * @link       http://www.php.net/manual/fr/book.pdo.php
  */
@@ -62,7 +61,6 @@ class PdoUser
             $res->bindvalue(':password', $password);
             $res->execute();
             $ligne = $res->fetch(); 
-        
             return $ligne;
         }   
 

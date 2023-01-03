@@ -27,6 +27,12 @@ switch ($uc)
         include("controllers/userController.php");
     break;
     
+    case 'logout':
+        session_destroy();
+        header("Location: connection");
+    break;
+    
+
     default:
         include("view/connection.php");
     break;
